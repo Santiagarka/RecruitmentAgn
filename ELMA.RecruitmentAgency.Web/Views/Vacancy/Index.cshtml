@@ -1,0 +1,74 @@
+﻿@using RecruitmentAgency.Web.Models
+
+@model IEnumerable<VacancyViewModel>
+
+@{
+    ViewData["Title"] = "Список вакансий";
+    var createUrl = Url.Action("Create", "Vacancy");
+
+}
+
+<div class="card">
+    <div class="card-header">
+        Список вакансий
+        @if (User.IsInRole("Employee"))
+        {
+            <a style="float: right;" href="@createUrl" type="button" class="btn btn-primary">Добавить вакансию</a>
+        }
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.Name)</a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CompanySortParm"]">@Html.DisplayNameFor(model => model.Company)</a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["TermSortParm"]">@Html.DisplayNameFor(model => model.Term)</a>
+                    </th>
+                    <th>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["SalarySortParm"]">@Html.DisplayNameFor(model => model.Salary)</a>
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        <a asp-action="View" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a>    
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Term)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salary)
+                    </td>
+                    <td>
+                        @if(User.IsInRole("Employee"))
+                        { 
+                        @if (item.IsActive)
+                        {
+                            <a class="material-icons" asp-action="Lock" asp-route-id="@item.Id" style="float: right;">lock</a>
+                        }
+                        else
+                        {
+                            <a class="material-icons" asp-action="Lock" asp-route-id="@item.Id" style="float: right;">lock_open</a>
+                        }
+                        <a class="material-icons" asp-action="SelectCandidates" asp-route-id="@item.Id" style="float: right;">emoji_people</a>
+                        }
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

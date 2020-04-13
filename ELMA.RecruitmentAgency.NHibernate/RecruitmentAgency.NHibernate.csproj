@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>RecruitmentAgency.NHibernate</RootNamespace>
+    <AssemblyName>RecruitmentAgency.NHibernate</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ELMA.RecruitmentAgency.Core\RecruitmentAgency.Core.csproj" />
+    <ProjectReference Include="..\Zero\RecruitmentAgency\RecruitmentAgency.csproj" />
+  </ItemGroup>
+
+</Project>

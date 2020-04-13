@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <RootNamespace>RecruitmentAgency.AspNetCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AspNetCore\Mvc\Conventions\" />
+    <Folder Include="AspNetCore\Runtime\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+﻿@using RecruitmentAgency.Web.Models
+
+@model ICollection<UserModel>
+
+@{
+    ViewData["Title"] = "Список пользователей";
+}
+
+<div class="card">
+    <div class="card-header">
+        Список пользователей
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td style="padding-left: 0px; padding-right: 0px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div style="display: flex">
+                                    <h5 style="display: flex; margin-bottom: 0px;">
+                                        @user.Login
+                                    </h5>
+                                    <div style="width: 100%;">
+                                        <a class="material-icons" style="float: right;" href="@Url.Action("Edit", "User", new { id = user.Id })">
+                                            edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

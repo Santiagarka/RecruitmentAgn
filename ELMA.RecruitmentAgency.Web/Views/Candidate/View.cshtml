@@ -1,0 +1,36 @@
+﻿@using RecruitmentAgency.Web.Models
+
+@{
+    var stringSkills = string.Join(", ", Model.Skills.Select(s => s.Name).ToList());
+}
+
+@model CandidateViewModel
+<div class="card">
+    <div class="card-header">
+        @Model.FIO
+    </div>
+    <div class="card-body">
+        <div class="form-group row">
+            <label asp-for="DateOfBirth" class="col-sm-2 col-form-label"></label>
+            <div>
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Experience" class="col-sm-2 col-form-label"></label>
+            <div>
+                @Html.DisplayFor(model => model.Experience)
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Salary" class="col-sm-2 col-form-label"></label>
+            <div>
+                @Html.DisplayFor(model => model.Salary)
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Skills" class="col-sm-2 col-form-label"></label>
+            @stringSkills
+        </div>
+    </div>
+</div>

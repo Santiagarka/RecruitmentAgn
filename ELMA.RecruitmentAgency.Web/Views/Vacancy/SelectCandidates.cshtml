@@ -1,0 +1,33 @@
+﻿@using RecruitmentAgency.Web.Models
+
+@model IEnumerable<CandidateViewModel>
+
+@{
+    ViewData["Title"] = "Список кандидатов";
+}
+
+<div class="card">
+    <div class="card-header">
+        Список кандидатов
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            @foreach (var candidate in Model)
+            {
+                <tr>
+                    <td style="padding-left: 0px; padding-right: 0px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div style="display: flex">
+                                    <h5 style="display: flex; margin-bottom: 0px;">
+                                        <a asp-action="View" asp-controller="Candidate" asp-route-id="@candidate.Id">@candidate.FIO</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

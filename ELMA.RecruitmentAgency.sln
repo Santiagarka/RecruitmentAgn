@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zero", "Zero", "{B94306F6-861C-48EB-9B09-5629FA9D5683}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitmentAgency", "Zero\RecruitmentAgency\RecruitmentAgency.csproj", "{B78CA6A6-B432-4520-AEF4-F23C932BF86B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitmentAgency.Web", "ELMA.RecruitmentAgency.Web\RecruitmentAgency.Web.csproj", "{40508181-0743-42D0-843D-D90C544BC961}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitmentAgency.Core", "ELMA.RecruitmentAgency.Core\RecruitmentAgency.Core.csproj", "{3BB21047-7390-439E-8EDA-AE4E8936EC87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitmentAgency.NHibernate", "ELMA.RecruitmentAgency.NHibernate\RecruitmentAgency.NHibernate.csproj", "{88AD4769-DB4B-4A00-AE29-710D19C6B7B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitmentAgency.AspNetCore", "Zero\ELMA.RecruitmentAgency.AspNetCore\RecruitmentAgency.AspNetCore.csproj", "{89528106-9ECC-4C0A-9F33-706B1A91B3BD}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RecruitmentAgency.Database", "RecruitmentAgency.Database\RecruitmentAgency.Database.sqlproj", "{59154268-9475-4EE9-9EDB-17CD88CE5681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78CA6A6-B432-4520-AEF4-F23C932BF86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78CA6A6-B432-4520-AEF4-F23C932BF86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78CA6A6-B432-4520-AEF4-F23C932BF86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78CA6A6-B432-4520-AEF4-F23C932BF86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40508181-0743-42D0-843D-D90C544BC961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40508181-0743-42D0-843D-D90C544BC961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40508181-0743-42D0-843D-D90C544BC961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40508181-0743-42D0-843D-D90C544BC961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB21047-7390-439E-8EDA-AE4E8936EC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB21047-7390-439E-8EDA-AE4E8936EC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB21047-7390-439E-8EDA-AE4E8936EC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB21047-7390-439E-8EDA-AE4E8936EC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AD4769-DB4B-4A00-AE29-710D19C6B7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AD4769-DB4B-4A00-AE29-710D19C6B7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AD4769-DB4B-4A00-AE29-710D19C6B7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AD4769-DB4B-4A00-AE29-710D19C6B7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89528106-9ECC-4C0A-9F33-706B1A91B3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89528106-9ECC-4C0A-9F33-706B1A91B3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89528106-9ECC-4C0A-9F33-706B1A91B3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89528106-9ECC-4C0A-9F33-706B1A91B3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59154268-9475-4EE9-9EDB-17CD88CE5681}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B78CA6A6-B432-4520-AEF4-F23C932BF86B} = {B94306F6-861C-48EB-9B09-5629FA9D5683}
+		{89528106-9ECC-4C0A-9F33-706B1A91B3BD} = {B94306F6-861C-48EB-9B09-5629FA9D5683}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1168D84-DE21-4536-B98C-B52173383B25}
+	EndGlobalSection
+EndGlobal
